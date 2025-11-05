@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import { Play } from "lucide-react";
 import { HeroVideoDialog } from "../ui/hero-video-dialog";
+import HeroButton from "./HeroButton";
 
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
         <Button variant={"outline"} size={"lg"}>
           Watch Video <Play />
         </Button>
-        <Button size={"lg"}>Get Started</Button>
+        <HeroButton />
       </div>
       <div className="relative max-w-3xl mt-14">
         <h2 className="text-center my-4">
