@@ -1,9 +1,17 @@
 "use client";
 
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
-import { Button } from "../ui/button";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+  useUser,
+} from "@clerk/nextjs";
+import { Button } from "./ui/button";
 
 const Header = () => {
+  const { user } = useUser();
+  
   return (
     <div className="flex items-center justify-between px-5 py-2">
       <img src={"./logo.png"} alt="Logo" width={42} height={42} />
