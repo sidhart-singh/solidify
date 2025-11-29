@@ -20,6 +20,7 @@ export async function POST(req: NextRequest) {
         id,
         name,
         email,
+        credit: 2,
         createdAt,
       });
     }
